@@ -19,8 +19,8 @@ social-github: BXZZcj # add your Github handle
 # social-linkedin: # add your Linkedin handle
 social-email: jiechutju@gmail.com # add your Email address
 
-# Disqus
-discus-identifier: mr-brown # add your discus identifier
+# # Disqus
+discus-identifier: https-bxzzcj-github-io # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
@@ -36,3 +36,5 @@ paginate: 8
 paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
+
