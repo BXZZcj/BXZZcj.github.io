@@ -2,8 +2,8 @@
 layout: post
 title: Computer Vision
 date: 2023-10-5 1:11:00 +0300
-description: This is the content of the curriculumn "Intro to Computer Vision" at Software Faulty in Tongji Univ, which is taught by Prof. Lin Zhang. # Add post description (optional)
-img: camera_calibration.jpg # Add image post (optional)
+description: This is the content of the course "Intro to Computer Vision" at Software Faulty in Tongji Univ, which is taught by Prof. Lin Zhang. # Add post description (optional)
+img: 2023-10-05-Computer-Vision/camera_calibration.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [CV, Image Stitching, Monocular Measurement, Bird's Eye View Generation]
 comments: true
