@@ -14,6 +14,8 @@ Computer Graphics without OpenGL
 ['GAMES101' course assignments completed by me, also being updated...](https://github.com/BXZZcj/Games101)
 
 <!-- more -->
+<br><br>
+
 CG中将一个物体从3D真实物理世界投影到3D屏幕世界(假设保留了z轴深度信息)的过程分为4步：
 
 1.	模型变换(model)：旋转平移缩放(都是刚性的)

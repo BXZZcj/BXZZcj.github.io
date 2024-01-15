@@ -12,6 +12,7 @@ comments: true
 My Early Understanding of Basic Deep Learning Terminology
 
 <!-- more -->
+<br><br>
 
 # 求导：
 求导使用链式法则。下即标量对标量求导的链式法则：

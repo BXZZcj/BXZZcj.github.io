@@ -12,6 +12,7 @@ comments: true
 Traditional CV, mathematics more than deep learning
 
 <!-- more -->
+<br><br>
 
 # 图像拼接问题
 <br>
@@ -196,7 +197,7 @@ $$
 
 我们先来看第(1)步，特征点检测算法检测出特征点，核心在于该如何选取特征点？也就是说图像中怎样的像素点该被选取？有一种做法是选取<span style="color:red;">哈里斯角点(简称角点，它其实不完全满足特征点的光照变化稳定性和几何变换稳定性，主要是几何变换稳定性中的尺度不变性，窗口大小被反映为特征尺度，所谓尺度不变性。但特征尺度的数值不一定等于窗口大小的数值。角点程度值和斑点响应值都是通过特征尺度内的像素计算出来的，但特征尺度不一定等于构建特征点描述子用的领域范围</span>)。我们先预测有这样一种点，叫做角点，它具备稳定、稀疏、特殊的性质，可以作为图像的特征点，那么，如何判断一个点是不是角点？我们人为主观给地一个点开一个小小的“领域窗口”(窗口的大小是人为设定的超参数)，假如这个点沿着任何方向移动，它的领域窗口中的像素值都会发生很大变化，那么它就是角点。显然，在一片相同像素中的某一个点，或者图像直线边缘上的点都不是角点，而一个图形尖角上的一个点是角点——这是个典型的角点，也是“角点”名称的来源。
 
-一个点是否为角点有一套量化的评判规则，评判指标为：使得该点领域窗口(窗口的大小是依经验选取的)在图像上移动至新位置后，新窗口的像素值和原窗口的像素值差值为1，此时的窗口位移量为deltaX与deltaY，deltaX与deltaY值越相近，且越小，则该点越适合作为Harris角点。事实上deltaX和deltaY的值相互制约，其值形成一个椭圆，我们希望这个椭圆是一个较小的正圆，而经过推导，该椭圆的长短轴大小仅依赖于该点在图像中位置附近的像素信息，且该位置附近像素信息可以被抽象成(<span style="color:red;">邻域窗口二阶导矩阵</span>)：
+一个点是否为角点有一套量化的评判规则，评判指标为：使得该点领域窗口(窗口的大小是依经验选取的)在图像上移动至新位置后，新窗口的像素值和原窗口的像素值差值为1，此时的窗口位移量为$$\Delta X$$与$$\Delta Y$$，$$\Delta X$$与$$Delta Y$$值越相近，且越小，则该点越适合作为Harris角点。事实上$$Delta X$$和$$Delta Y$$的值相互制约，其值形成一个椭圆，我们希望这个椭圆是一个较小的正圆，而经过推导，该椭圆的长短轴大小仅依赖于该点在图像中位置附近的像素信息，且该位置附近像素信息可以被抽象成(<span style="color:red;">邻域窗口二阶导矩阵</span>)：
 $$
 M = \left[ \begin{array}{cc}
 \sum\limits_{(x_i,y_i) \in W} \left( \frac{\partial f}{\partial x} \big|_{\substack{(x_i,y_i)}} \right)^2 & 
@@ -205,7 +206,7 @@ M = \left[ \begin{array}{cc}
 \sum\limits_{(x_i,y_i) \in W} \left( \frac{\partial f}{\partial y} \big|_{\substack{(x_i,y_i)}} \right)^2
 \end{array} \right]
 $$
-。f为以x,y为自变量，像素值为因变量的函数，xi和yi为该点领域窗口内的全部像素点。我们说，deltaX和deltaY形成的椭圆的长短半轴依赖于M，我们可以从M中中提取出这样一个表达式(<span style="color:red;">角点程度值</span>)，来表示该点椭圆接近于小面积正圆的程度：
+。f为以x,y为自变量，像素值为因变量的函数，xi和yi为该点领域窗口内的全部像素点。我们说，$$Delta X$$和$$Delta Y$$形成的椭圆的长短半轴依赖于M，我们可以从M中中提取出这样一个表达式(<span style="color:red;">角点程度值</span>)，来表示该点椭圆接近于小面积正圆的程度：
 $$
 r(x)=det(M(x))-k(trace(M(x)))^2
 $$
@@ -767,19 +768,19 @@ h既是迭代去新值的距离，又是方向。c是一个向量。B必须是�
 
 - Trust-region method：
 
-    给h硬性设定一个取值范围$$\delta$$，h的计算式子变成了：
+    给h硬性设定一个取值范围$$\Delta$$，h的计算式子变成了：
     \\[
-    h_{tr}=\mathop{\arg\min}\limits_{h}\textit{L}(h),\, s.t., \, h^Th\leq \delta^2\quad \textbf{(Eq.1)}
+    h_{tr}=\mathop{\arg\min}\limits_{h}\textit{L}(h),\, s.t., \, h^Th\leq \Delta^2\quad \textbf{(Eq.1)}
     \\]
     算法为：
     <p align="center">
     <img src="{{site.baseurl}}/assets/img/2023-10-05-Computer-Vision/非线性最小二乘_4.png" alt="非线性最小二乘_4" width="45%">
     </p>
-    每轮迭代后，都要根据h迭代的效果更新delta，如何量化迭代的效果？增益比。计算式如下：
+    每轮迭代后，都要根据h迭代的效果更新$$\Delta$$，如何量化迭代的效果？增益比。计算式如下：
     <p align="center">
     <img src="{{site.baseurl}}/assets/img/2023-10-05-Computer-Vision/非线性最小二乘_5.png" alt="非线性最小二乘_5" width="45%">
     </p>
-    依据Rho更新delta的方式可以如下：
+    依据$$\Rho$$更新$$\Delta$$的方式可以如下：
     <p align="center">
     <img src="{{site.baseurl}}/assets/img/2023-10-05-Computer-Vision/非线性最小二乘_6.png" alt="非线性最小二乘_6" width="20%">
     </p>
@@ -794,7 +795,7 @@ h既是迭代去新值的距离，又是方向。c是一个向量。B必须是�
     \\[
     h_{dm}=-(B+\mu I)^{-1} c
     \\]
-    $$\mu$$也跟$$\delta$$一样，在每轮迭代$$h$$后要要更新，更新也是依据的增益比$$\rho$$：
+    $$\mu$$也跟$$\Delta$$一样，在每轮迭代$$h$$后要要更新，更新也是依据的增益比$$\rho$$：
     <p align="center">
     <img src="{{site.baseurl}}/assets/img/2023-10-05-Computer-Vision/非线性最小二乘_7.png" alt="非线性最小二乘_7" width="20%">
     </p>
