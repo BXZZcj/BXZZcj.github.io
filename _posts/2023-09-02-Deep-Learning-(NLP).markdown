@@ -9,7 +9,8 @@ tags: [DL, NLP, RNN, encoder-decoder, text pre-process, attention]
 comments: true
 ---
 
-Naive NLP...<br>
+Naive NLP...
+
 [An open-source chatbot configuration tool available on GitHub](https://github.com/BXZZcj/ChatEase-Streamlined-Server-Chatbot-Configuration)
 
 <!-- more -->
