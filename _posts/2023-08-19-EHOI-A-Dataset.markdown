@@ -9,7 +9,7 @@ tags: [Event Stream, Hand-Object Interaction, 3D Reconstruction]
 comments: true
 ---
 
-"EHOI" stands for Event-based Hand-Object Interaction reconstruction. 
+"EHOI" stands for Event-based Hand-Object Interaction Reconstruction. 
 
 <!-- more -->
 <br><br>
