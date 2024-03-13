@@ -150,7 +150,7 @@ sR_{2 \times 2} & t_{2 \times 1} \\
 \end{bmatrix}
 $$
 ，s被称作缩放系数，R正交且det=1；自由度为4；相似比不变。
-4.	仿射变换：A作用于一点相当于先逆时针旋转phi度沿X，Y轴做不同系数的缩放顺旋转phi度逆时针旋转theta度；只考虑正常点；不保持角度；当det(A)>0时保持方向；形式为
+4.	仿射变换：A作用于一点相当于先逆时针旋转$$\phi$$度$$\rightarrow$$沿X，Y轴做不同系数的缩放$$\rightarrow$$顺旋转$$\phi$$度$$\rightarrow$$逆时针旋转$$\theta$$度；只考虑正常点；不保持角度；当det(A)>0时保持方向；形式为
 $$
 H_{3 \times 3} = \begin{bmatrix}
 A_{2 \times 2} & t_{2 \times 1} \\
