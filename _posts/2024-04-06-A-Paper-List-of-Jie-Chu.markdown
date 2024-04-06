@@ -41,7 +41,6 @@ Topics:
 - 👀 CoRL 2021 (oral), A System for General In-Hand Object Re-Orientation, [arXiv](https://arxiv.org/abs/2111.03043)/[Website](https://taochenshh.github.io/projects/in-hand-reorientation)
 - 👀 arXiv 2019.11, Manipulation Trajectory Optimization with Online Grasp Synthesis and Selection, [arXiv](https://arxiv.org/abs/1911.10280)
 - 🔍 CoRL 2021, Goal-Auxiliary Actor-Critic for 6D Robotic Grasping with Point Clouds, [arXiv](https://arxiv.org/abs/2010.00824)/[Website](https://sites.google.com/view/gaddpg)
-- ...
 
 
 # Vision
@@ -56,6 +55,7 @@ Topics:
 - 🔍 CVPR 2020, **Video to Events**: Recycling Video Datasets for Event Cameras, [arXiv](https://arxiv.org/abs/1912.03095)/[Website](https://github.com/uzh-rpg/rpg_vid2e)
 - 🔍 CVPRw 2021, **v2e**: From Video Frames to Realistic DVS Events, [arXiv](https://arxiv.org/abs/2006.07722)/[Website](https://sites.google.com/view/video2events/home)
 - 👀 PAMI 2020, Event-based Vision: **A Survey**, [arXiv](https://arxiv.org/abs/1904.08405)
+- ...
 
 
 ## RGB Perception
