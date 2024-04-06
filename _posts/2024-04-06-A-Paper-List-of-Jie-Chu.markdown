@@ -42,6 +42,7 @@ Topics:
 - 👀 arXiv 2019.11, Manipulation Trajectory Optimization with Online Grasp Synthesis and Selection, [arXiv](https://arxiv.org/abs/1911.10280)
 - 🔍 CoRL 2021, Goal-Auxiliary Actor-Critic for 6D Robotic Grasping with Point Clouds, [arXiv](https://arxiv.org/abs/2010.00824)/[Website](https://sites.google.com/view/gaddpg)
 
+<br>
 
 # Vision
 
