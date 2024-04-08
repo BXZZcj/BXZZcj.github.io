@@ -41,7 +41,7 @@ Topics:
 - 👀 CoRL 2021 (oral), A System for General In-Hand Object Re-Orientation, [arXiv](https://arxiv.org/abs/2111.03043)/[Website](https://taochenshh.github.io/projects/in-hand-reorientation)
 - 👀 arXiv 2019.11, Manipulation Trajectory Optimization with Online Grasp Synthesis and Selection, [arXiv](https://arxiv.org/abs/1911.10280)
 - 🔍 CoRL 2021, Goal-Auxiliary Actor-Critic for 6D Robotic Grasping with Point Clouds, [arXiv](https://arxiv.org/abs/2010.00824)/[Website](https://sites.google.com/view/gaddpg)
-- 👀 arXiv 2024.03, Diffusion Policy: Visuomotor Policy Learning via Action Diffusion, [arXiv](https://arxiv.org/abs/2303.04137)/[Website](https://diffusion-policy.cs.columbia.edu/)
+- 👀 arXiv 2024.03, **Diffusion Policy**: Visuomotor Policy Learning via Action Diffusion, [arXiv](https://arxiv.org/abs/2303.04137)/[Website](https://diffusion-policy.cs.columbia.edu/)
 
 <br>
 
