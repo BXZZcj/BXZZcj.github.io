@@ -9,12 +9,14 @@ tags: [Research, Embodied AI, Vision]
 comments: true
 ---
 
-🔍 Indicates In-Deep Reading
-
-👀 Indicates Skimming
+A paper list of my history reading.🔍👀 Embodied AI, Vision.
 
 <!-- more -->
 <br><br>
+
+🔍 Indicates In-Deep Reading
+
+👀 Indicates Skimming
 
 Topics:
 
