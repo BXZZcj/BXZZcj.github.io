@@ -20,11 +20,13 @@ A paper list of my history reading.🔍👀 Embodied AI, Vision.
 
 Topics:
 
-- Embodied AI
+- Embodied AI:
     - [Manipulation](#manipulation)
 - Vision:
   - [Event Vision](#event-vision)
   - [RGB Perception](#rgb-perception)
+- NLP:
+  - [LLM](#llm)
 
 <br><br>
 
@@ -44,6 +46,7 @@ Topics:
 - 👀 arXiv 2019.11, Manipulation Trajectory Optimization with Online Grasp Synthesis and Selection, [arXiv](https://arxiv.org/abs/1911.10280)
 - 🔍 CoRL 2021, Goal-Auxiliary Actor-Critic for 6D Robotic Grasping with Point Clouds, [arXiv](https://arxiv.org/abs/2010.00824)/[Website](https://sites.google.com/view/gaddpg)
 - 👀 arXiv 2024.03, **Diffusion Policy**: Visuomotor Policy Learning via Action Diffusion, [arXiv](https://arxiv.org/abs/2303.04137)/[Website](https://diffusion-policy.cs.columbia.edu/)
+- 👀 arXiv 2024.04, **PreAfford**: Universal Affordance-Based Pre-Grasping for Diverse Objects and Environments, [arXiv](https://arxiv.org/abs/2404.03634)/[Website](https://air-discover.github.io/PreAfford/)
 
 <br>
 
@@ -77,3 +80,8 @@ Topics:
 - 👀 ECCV 2022, Joint Feature Learning and Relation Modeling for Tracking: A One-Stream Framework, [arXiv](https://arxiv.org/abs/2203.11991)/[Website](https://github.com/botaoye/OSTrack)
 - 👀 ECCV 2018, **TrackingNet**: A Large-Scale Dataset and Benchmark for Object Tracking in the Wild, [arXiv](https://arxiv.org/abs/1803.10794)
 - Can't Recall ......
+
+
+## LLM
+- 👀 arXiv 2024.04, A Survey on Multimodal Large Language Models, [arXiv](https://arxiv.org/abs/2306.13549)/[Website](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
+- 👀 arXiv 2023.10, The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision), [arXiv](https://arxiv.org/abs/2309.17421)
