@@ -84,4 +84,4 @@ Topics:
 
 ## LLM
 - 👀 arXiv 2024.04, A Survey on Multimodal Large Language Models, [arXiv](https://arxiv.org/abs/2306.13549)/[Website](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
-- 👀 arXiv 2023.10, The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision), [arXiv](https://arxiv.org/abs/2309.17421)
+- 👀 arXiv 2023.10, **The Dawn of LMMs**: Preliminary Explorations with GPT-4V(ision), [arXiv](https://arxiv.org/abs/2309.17421)
