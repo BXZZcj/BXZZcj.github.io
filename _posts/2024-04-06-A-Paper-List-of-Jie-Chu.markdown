@@ -22,6 +22,7 @@ Topics:
 
 - Embodied AI:
     - [Manipulation](#manipulation)
+    - [Perception](#perception)
 - Vision:
   - [Event Vision](#event-vision)
   - [RGB Perception](#rgb-perception)
@@ -48,6 +49,9 @@ Topics:
 - 👀 arXiv 2024.03, **Diffusion Policy**: Visuomotor Policy Learning via Action Diffusion, [arXiv](https://arxiv.org/abs/2303.04137)/[Website](https://diffusion-policy.cs.columbia.edu/)
 - 👀 arXiv 2024.04, **PreAfford**: Universal Affordance-Based Pre-Grasping for Diverse Objects and Environments, [arXiv](https://arxiv.org/abs/2404.03634)/[Website](https://air-discover.github.io/PreAfford/)
 
+## Perception
+- 👀 CVPR 2024, **SAM-6D**: Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation, [arXiv](https://arxiv.org/abs/2311.15707)/[Website](https://github.com/JiehongLin/SAM-6D)
+
 <br>
 
 # Vision
@@ -65,7 +69,7 @@ Topics:
 - Can't Recall ......
 
 
-## RGB Perception
+## RGB-based Vision
 
 - 🔍 ICCV 2021, **EventHands**: Real-Time Neural 3D Hand Pose Estimation from an Event Stream, [arXiv](https://arxiv.org/abs/2012.06475)/[Website](https://4dqv.mpi-inf.mpg.de/EventHands/)
 - 🔍 ECCV 2020 (oral), Towards Streaming Perception, [arXiv](https://arxiv.org/abs/2005.10420)/[Website](https://www.cs.cmu.edu/~mengtial/proj/streaming/)
@@ -79,6 +83,7 @@ Topics:
 - 🔍 CVPR 2023, Are We Ready for Vision-Centric Driving Streaming Perception? **The ASAP Benchmark**, [arXiv](https://arxiv.org/abs/2212.08914)/[Website](https://github.com/JeffWang987/ASAP)
 - 👀 ECCV 2022, Joint Feature Learning and Relation Modeling for Tracking: A One-Stream Framework, [arXiv](https://arxiv.org/abs/2203.11991)/[Website](https://github.com/botaoye/OSTrack)
 - 👀 ECCV 2018, **TrackingNet**: A Large-Scale Dataset and Benchmark for Object Tracking in the Wild, [arXiv](https://arxiv.org/abs/1803.10794)
+- 👀 CVPR 2024, **SAM-6D**: Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation, [arXiv](https://arxiv.org/abs/2311.15707)/[Website](https://github.com/JiehongLin/SAM-6D)
 - Can't Recall ......
 
 
