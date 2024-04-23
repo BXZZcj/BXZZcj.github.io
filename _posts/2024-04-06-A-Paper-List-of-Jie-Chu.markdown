@@ -21,8 +21,9 @@ A paper list of my history reading.🔍👀 Embodied AI, Vision.
 Topics:
 
 - Embodied AI:
-    - [Manipulation](#manipulation)
-    - [Perception](#perception)
+    - [Scene Understanding](#scene-understanding)
+    - [Data Acquisition](#data-acquisition)
+    - [Action Output](#action-output)
 - Vision:
   - [Event Vision](#event-vision)
   - [RGB Perception](#rgb-perception)
@@ -33,24 +34,37 @@ Topics:
 
 # Embodied AI
 
-## Manipulation
+## Scene Understanding
+
+- 👀 CVPR 2024, **SAM-6D**: Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation, [arXiv](https://arxiv.org/abs/2311.15707)/[Website](https://github.com/JiehongLin/SAM-6D)
+- 👀 ICRA 2024, **ConceptGraphs**: Open-Vocabulary 3D Scene Graphs for Perception and Planning, [arXiv](https://arxiv.org/abs/2309.16650)/[Website](https://concept-graphs.github.io/)
+
+
+## Data Acquisition
 
 - 🔍 CoRL 2023, **MimicPlay**: Long-Horizon Imitation Learning by Watching Human Play, [arXiv](https://arxiv.org/abs/2302.12422)/[Website](https://mimic-play.github.io/)
 - 🔍 arXiv 2024.01, **Mobile ALOHA**: Learning Bimanual Mobile Manipulation with Low-Cost Whole-Body Teleoperation, [arXiv](https://arxiv.org/abs/2401.02117)/[Website](https://mobile-aloha.github.io/)
 - 🔍 arXiv 2024.03, **DexCap**: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation, [arXiv](https://arxiv.org/abs/2403.07788)/[Website](https://dex-cap.github.io/)
 - 👀 CoRL 2019, Learning Latent Plans from Play, [arXiv](https://arxiv.org/abs/1903.01973)/[Website](https://learning-from-play.github.io/)
-- 👀 arXiv 2024.03, **Yell At Your Robot**: Improving On-the-Fly from Language Corrections, [arXiv](https://arxiv.org/abs/2403.12910)/[Website](https://yay-robot.github.io/)
-- 👀 ICRA 2022, **HandoverSim**: A Simulation Framework and Benchmark for Human-to-Robot Object Handovers, [arXiv](https://arxiv.org/abs/2205.09747)/[Website](https://handover-sim.github.io/)
 - 🔍 CVPR 2023 (highlight), Learning Human-to-Robot Handovers from Point Clouds, [arXiv](https://arxiv.org/abs/2303.17592)/[Website](https://handover-sim2real.github.io/)
+- 👀 ICRA 2022, **HandoverSim**: A Simulation Framework and Benchmark for Human-to-Robot Object Handovers, [arXiv](https://arxiv.org/abs/2205.09747)/[Website](https://handover-sim.github.io/)
+- 👀 CVPR 2024, **CyberDemo**: Augmenting Simulated Human Demonstration for Real-World Dexterous Manipulation, [arXiv](https://arxiv.org/abs/2402.14795)/[Website](https://cyber-demo.github.io/)
+
+## Action Output
+
+- 👀 arXiv 2024.03, **Yell At Your Robot**: Improving On-the-Fly from Language Corrections, [arXiv](https://arxiv.org/abs/2403.12910)/[Website](https://yay-robot.github.io/)
 - 🔍 ICRA 2021, Reactive Human-to-Robot Handovers of Arbitrary Objects, [arXiv](https://arxiv.org/abs/2011.08961)/[Website](https://sites.google.com/nvidia.com/handovers-of-arbitrary-objects)
 - 👀 CoRL 2021 (oral), A System for General In-Hand Object Re-Orientation, [arXiv](https://arxiv.org/abs/2111.03043)/[Website](https://taochenshh.github.io/projects/in-hand-reorientation)
 - 👀 arXiv 2019.11, Manipulation Trajectory Optimization with Online Grasp Synthesis and Selection, [arXiv](https://arxiv.org/abs/1911.10280)
 - 🔍 CoRL 2021, Goal-Auxiliary Actor-Critic for 6D Robotic Grasping with Point Clouds, [arXiv](https://arxiv.org/abs/2010.00824)/[Website](https://sites.google.com/view/gaddpg)
 - 👀 arXiv 2024.03, **Diffusion Policy**: Visuomotor Policy Learning via Action Diffusion, [arXiv](https://arxiv.org/abs/2303.04137)/[Website](https://diffusion-policy.cs.columbia.edu/)
 - 👀 arXiv 2024.04, **PreAfford**: Universal Affordance-Based Pre-Grasping for Diverse Objects and Environments, [arXiv](https://arxiv.org/abs/2404.03634)/[Website](https://air-discover.github.io/PreAfford/)
-
-## Perception
-- 👀 CVPR 2024, **SAM-6D**: Segment Anything Model Meets Zero-Shot 6D Object Pose Estimation, [arXiv](https://arxiv.org/abs/2311.15707)/[Website](https://github.com/JiehongLin/SAM-6D)
+- 👀 arXiv 2023.11, **GOAT**: GO to Any Thing, [arXiv](https://arxiv.org/abs/2311.06430)/[Website](https://theophilegervet.github.io/projects/goat/)
+- 👀 arXiv 2024.03, Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [arXiv](https://arxiv.org/abs/2403.04436)/[Website](https://human2humanoid.com/)
+- 👀 arXiv 2024.02, **BBSEA**: An Exploration of Brain-Body Synchronization for Embodied Agents, [arXiv](https://arxiv.org/abs/2402.08212)/[Website](https://bbsea-embodied-ai.github.io/)
+- 🔍 CVPR 2024, **OpenEQA**: Embodied Question Answering in the Era of Foundation Models, [Website](https://open-eqa.github.io/)
+- 👀 CVPR 2018, Embodied Question Answering, [arXiv](https://arxiv.org/abs/1711.11543)/[Website](https://embodiedqa.org/)
+- 👀 RSS 2023, Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware, [arXiv](https://arxiv.org/abs/2304.13705)/[Website](https://tonyzhaozh.github.io/aloha/)
 
 <br>
 
