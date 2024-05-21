@@ -9,8 +9,8 @@ url: "https://BXZZcj.github.io" # the base hostname & protocol for your site, e.
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Jie Chu # add your name
-author-img: JieChuProfile.png # add your photo
+author: "Jie Chu<br>小君开药" # add your name
+author-img: Ayanami.png # add your photo
 about-author: 
   "I am an undergraduate major in Software Engineering at Tongji University.<br>Always hungry to keep learning." # add description
 # social-twitter: # add your Twitter handle
