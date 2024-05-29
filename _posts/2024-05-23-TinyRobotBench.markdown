@@ -29,11 +29,18 @@ LLM guides robot operations
 
 虽然这个项目很Toy，但我觉得它对于一个Embodied AI初学者来说很有用，有助于打通LLM指导Robot做任务的大体流程。你知道的，现在 LLM + Robotics 的套路在Embodied AI社区非常火，变着花样发文章。
 
-但是，该项目并没有开源代码(大概是作者认为它太Toy了，没有开源的意义)，然后我还看到评论区有人在向作者求代码，但作者并没有回复
+## 但是，该项目并没有开源代码
+
+(大概是作者认为它太Toy了，没有开源的意义)，然后我还在很多地方看到有人在向作者求代码，但作者并没有回复
 
 <p align="center">
-  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/TinyRobotBench_Yunlong_Comments.png" alt="评论区" width="70%">
+  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/requests_for_source_code.png" alt="求代码" width="75%">
 </p>
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/TinyRobotBench_Yunlong_Comments.png" alt="求代码" width="67%">
+</p>
+
 
 <br><br>
 
@@ -56,4 +63,11 @@ LLM guides robot operations
 </p>
 
 ## 代码已上传至 GitHub: 
-[👆️](https://github.com/BXZZcj/TinyRobotBench)
+[![东林钟声知乎文章]({{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/github_repo.png)](https://github.com/BXZZcj/TinyRobotBench)
+
+<br><br>
+
+假如真能起到一些帮助的话，还是蛮开心的哦😊~
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/thanks.png" alt="ChatBot" width="80%">
+</p>
