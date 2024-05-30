@@ -68,6 +68,8 @@ LLM guides robot operations
 <br><br>
 
 假如真能起到一些帮助的话，还是蛮开心的哦😊~
+
+(截止5/30/2024有4个⭐啦！开心开心开心，唔~~😝😝)
 <p align="center">
   <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/thanks.png" alt="ChatBot" width="80%">
 </p>
