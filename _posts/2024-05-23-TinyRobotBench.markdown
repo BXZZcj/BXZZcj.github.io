@@ -71,5 +71,9 @@ LLM guides robot operations
 
 (截止5/30/2024有5个⭐啦！开心开心开心，唔~~😝😝)
 <p align="center">
-  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/thanks.png" alt="ChatBot" width="80%">
+  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/thanks.png" alt="thanks" width="80%">
+</p>
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/JieWithHardware.jpg" alt="JieWithHardware" width="50%">
 </p>
