@@ -71,13 +71,9 @@ LLM guides robot operations
 
 (截止25/6/2024有3个Fork 9个⭐啦！开心开心开心，唔~~😝😝)
 <p align="center">
-<<<<<<< HEAD
   <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/thanks.png" alt="thanks" width="80%">
 </p>
 
 <p align="center">
   <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/JieWithHardware.jpg" alt="JieWithHardware" width="50%">
-=======
-  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/thanks.png" alt="ChatBot" width="80%">
->>>>>>> 6c96b750003c4c4a5259ccb128b3e1832cc86110
 </p>
