@@ -2,7 +2,7 @@ title: Hello, world! I'm Jie Chu
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to Jie Chu's Blog, dedicated to sharing insights and knowledge gained 
   throughout Jie Chu's journey in learing AI.\n
-  About Jie Chu: graduated from Tongji University, educated at Bilibili.
+  About Jie Chu: PhD student at SJTU & SII.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://BXZZcj.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -12,7 +12,7 @@ site-twitter: #if your site has a twitter account, enter it here
 author: "Jie Chu<br>小君开药" # add your name
 author-img: Ayanami.png # add your photo
 about-author: 
-  "I am an undergraduate major in Software Engineering at Tongji University.<br>Always hungry to keep learning." # add description
+  "I am a PhD student at Shanghai Jiao Tong University and Shanghai Innovation Institution, specializing in Robot Learning." # add description
 # social-twitter: # add your Twitter handle
 # social-facebook: # add your Facebook handle
 social-github: BXZZcj # add your Github handle
