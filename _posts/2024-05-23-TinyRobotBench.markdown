@@ -73,7 +73,3 @@ LLM guides robot operations
 <p align="center">
   <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/thanks.png" alt="thanks" width="80%">
 </p>
-
-<p align="center">
-  <img src="{{site.baseurl}}/assets/img/2024-05-23-TinyRobotBench/JieWithHardware.jpg" alt="JieWithHardware" width="50%">
-</p>
