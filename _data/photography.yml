@@ -28,16 +28,16 @@
   alt: "Wind-shaped sand dunes in warm light"
   row: 2
   full_width: 1603
-- image: "photo-27-c235bc5a"
-  width: 4528
-  height: 3024
-  alt: "Travelers dwarfed by a vast rocky mountain"
-  row: 3
-  full_width: 2400
 - image: "photo-35"
   width: 4000
   height: 2670
   alt: "Layered mountain slopes in warm evening light"
+  row: 3
+  full_width: 2400
+- image: "photo-27-c235bc5a"
+  width: 4528
+  height: 3024
+  alt: "Travelers dwarfed by a vast rocky mountain"
   row: 3
   full_width: 2400
 - image: "photo-37"
