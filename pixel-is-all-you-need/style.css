@@ -113,12 +113,12 @@ p { margin: 0 0 14px; color: var(--ink-2); }
 .btn:hover { text-decoration: none; }
 .btn svg { width: 15px; height: 15px; fill: currentColor; }
 .btn .btn-logo { display: block; flex-shrink: 0; height: 15px; width: auto; filter: brightness(0) invert(1); }
-.btn.paper { background: #B31B1B; border-color: #B31B1B; color: #fff !important; }
+.btn.paper { background: #B31A1B; border-color: #B31A1B; color: #fff !important; }
 .btn.paper:hover { background: #9A1717; border-color: #9A1717; }
-.btn.code { background: #141414; border-color: #141414; color: #FAFAF7 !important; }
-.btn.code:hover { opacity: .85; }
-.btn.bib { background: transparent; border-color: var(--rule); color: var(--ink) !important; }
-.btn.bib:hover { border-color: #aaa; }
+.btn.code { background: #FFD21F; border-color: #FFD21F; color: #141414 !important; }
+.btn.code:hover { background: #EFC318; border-color: #EFC318; }
+.btn.bib { background: #141414; border-color: #141414; color: #FAFAF7 !important; }
+.btn.bib:hover { opacity: .85; }
 
 /* player */
 .hero-panel { background: var(--wash); border-radius: 12px; border: 1px solid var(--rule); padding: 18px 28px 28px; margin-top: 30px; }
