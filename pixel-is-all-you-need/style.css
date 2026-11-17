@@ -82,36 +82,43 @@ p { margin: 0 0 14px; color: var(--ink-2); }
 .lead { font-size: 17px; color: var(--muted); margin-bottom: 0; }
 
 /* hero */
-.hero { padding: 84px 0 8px; text-align: center; }
+.hero { padding: 52px 0 8px; text-align: left; }
 .hero h1 {
-  font-family: var(--serif); font-weight: 700; font-size: clamp(48px, 7vw, 80px);
-  line-height: 1.08; letter-spacing: -.03em; padding-bottom: .04em;
-  background: var(--title); -webkit-background-clip: text; background-clip: text; color: transparent;
+  font-family: var(--serif); font-weight: 700; font-size: clamp(3rem, 7vw, 5.2rem);
+  line-height: 1.08; letter-spacing: -.03em; margin-bottom: 22px; display: inline-block;
+  background: var(--title); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
 }
-.hero .tagline { font-size: 21px; color: var(--ink-2); margin: 16px auto 8px; }
-.hero .tagline em { font-family: var(--serif); font-style: italic; font-weight: 700; color: var(--col); }
-.hero .tags { font-family: var(--mono); font-size: 12px; margin-bottom: 26px; letter-spacing: .04em; }
-.hero .tags span { display: inline-block; padding: 3px 10px; border-radius: 99px; margin: 0 3px; background: var(--bg-dim); color: var(--muted); }
-.authors { font-size: 15.5px; color: var(--ink-2); max-width: 760px; margin: 0 auto; }
+.hero .tagline { font-family: var(--sans); font-size: 1.2rem; font-weight: 400; color: var(--ink-2); line-height: 1.6; margin: 0 0 28px; }
+.hero .tagline em { font-style: italic; font-weight: 700; color: var(--col); }
+.hero .tags { font-family: var(--mono); font-size: 12px; margin: -12px 0 28px; letter-spacing: .04em; }
+.hero .tags span { display: inline-block; padding: 3px 10px; border-radius: 99px; margin: 0 6px 0 0; background: var(--bg-dim); color: var(--muted); }
+.authors { font-size: .95rem; color: var(--ink-2); line-height: 1.8; margin: 0 0 4px; }
 .authors a, .authors span.n { color: var(--ink-2); font-weight: 500; }
 .authors a { border-bottom: 1px solid var(--geo-mid); }
 .authors a:hover { color: var(--geo); text-decoration: none; }
 .authors sup { font-size: .65em; color: var(--muted); }
-.authors .sep { color: var(--rule); margin: 0 6px; }
-.affil { font-size: 13.5px; color: var(--muted); font-style: italic; margin-top: 6px; }
+.authors .sep { color: var(--muted); margin: 0 4px; }
+.affil { font-size: .85rem; color: var(--muted); margin-bottom: 24px; }
 
 /* buttons */
-.buttons { display: flex; gap: 12px; justify-content: center; margin: 26px 0 44px; flex-wrap: wrap; }
+/* buttons: rounded rectangles in the PaintBench colors */
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; margin: 0 0 28px; }
 .btn {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 9px 20px; border-radius: 99px; font-size: 14px; font-weight: 600;
-  color: #fff !important; transition: filter .15s, transform .15s;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .875rem; font-weight: 600;
+  padding: 9px 20px; border-radius: 7px; border: 1.5px solid transparent;
+  transition: .15s; white-space: nowrap;
 }
-.btn:hover { text-decoration: none; filter: brightness(.93); transform: translateY(-1px); }
-.btn svg { width: 16px; height: 16px; fill: currentColor; }
-.btn.paper { background: #A33A35; }
-.btn.code { background: #222220; }
-.btn.bib { background: #E3B867; color: #3B2E12 !important; }
+.btn:hover { text-decoration: none; }
+.btn svg { width: 15px; height: 15px; fill: currentColor; }
+.btn .btn-logo { display: block; flex-shrink: 0; height: 15px; width: auto; filter: brightness(0) invert(1); }
+.btn.paper { background: #B31B1B; border-color: #B31B1B; color: #fff !important; }
+.btn.paper:hover { background: #9A1717; border-color: #9A1717; }
+.btn.code { background: #141414; border-color: #141414; color: #FAFAF7 !important; }
+.btn.code:hover { opacity: .85; }
+.btn.bib { background: transparent; border-color: var(--rule); color: var(--ink) !important; }
+.btn.bib:hover { border-color: #aaa; }
 
 /* player */
 .hero-panel { background: var(--wash); border-radius: 12px; border: 1px solid var(--rule); padding: 18px 28px 28px; margin-top: 30px; }
