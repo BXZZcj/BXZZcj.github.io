@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/img/photography-share.jpg' | absolute_url }}">
+  <meta property="og:image:alt" content="A winding river beneath golden evening light">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
+  <meta name="twitter:description" content="{{ page.description | escape }}">
+  <meta name="twitter:image" content="{{ '/assets/img/photography-share.jpg' | absolute_url }}">
+  <link rel="icon" href="{{ '/assets/img/favicon/jie-chu.ico' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/favicon/jie-chu-180.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <main class="page">
+    {{ content }}
+  </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+---
+layout: photography
+title: Jie Chu — Photography & travel
+description: Photography and travel by Jie Chu. A collection of moments, light, and encounters from along the way.
+permalink: /photography/
+sitemap: false
+---
+<header class="portfolio-header profile-intro">
+  <div>
+    <p class="portfolio-name">Jie Chu</p>
+    <h1>Photography &amp; travel</h1>
+    <p>Hi! I love photography and travel. <a href="mailto:{{ site.social-email }}">Let's plan a photo shoot or a trip together!</a><br>Here are a few moments I've captured along the way.</p>
+    <p class="contact"><a href="mailto:{{ site.social-email }}">{{ site.social-email }}</a></p>
+  </div>
+  <img class="portrait" src="{{ '/assets/img/JieChu.webp' | relative_url }}" width="640" height="640" alt="Jie Chu holding a camera" fetchpriority="high">
+</header>
+
+<section aria-label="Photographs">
+  {% include photo-gallery.html %}
+</section>
+{% include photo-viewer.html %}
+
+<footer class="page-footer">
+  <p>Photographs by Jie Chu · <a href="#">Back to top ↑</a></p>
+</footer>

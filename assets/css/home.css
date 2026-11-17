@@ -28,6 +28,10 @@ p { margin: 0 0 13px; }
 .blog-tab { padding: 3px 12px; border: 1px solid #d9d7d2; border-radius: 3px; font-size: 16px; text-decoration: none; white-space: nowrap; }
 .blog-tab span { margin-left: 4px; font-size: 14px; }
 .blog-tab:hover { border-color: #806243; }
+.portfolio-header { margin-bottom: 40px; }
+.portfolio-name { margin: 0 0 10px; font-size: 20px; }
+.portfolio-header h1 { margin-bottom: 16px; }
+.portfolio-header .contact { margin-bottom: 0; }
 .photography { margin-top: 55px; border-top: 1px solid #e8e6e0; padding-top: 32px; }
 .gallery-intro { margin: 0 0 30px; }
 .gallery-intro p { margin: 0; color: #68665f; font-size: 16px; line-height: 1.9; }

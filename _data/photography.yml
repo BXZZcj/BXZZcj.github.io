@@ -208,17 +208,11 @@
   alt: "Warm-toned stairways circling an open atrium"
   row: 15
   full_width: 1603
-- image: "photo-38"
-  width: 3024
-  height: 4528
-  alt: "Repeating balconies around a bright stairwell"
-  row: 15
-  full_width: 1603
 - image: "photo-20"
   width: 3024
   height: 4528
   alt: "A view through the center of a tall spiral stairwell"
-  row: 16
+  row: 15
   full_width: 1603
 - image: "photo-21"
   width: 3024
@@ -232,33 +226,27 @@
   alt: "A spiral staircase seen from below"
   row: 16
   full_width: 1603
+- image: "photo-12"
+  width: 4528
+  height: 3024
+  alt: "A spiral staircase framing a colorful mural"
+  row: 16
+  full_width: 2400
 - image: "photo-24"
   width: 3024
   height: 4528
   alt: "Railings and steps tracing a spiral toward the sky"
   row: 17
   full_width: 1603
-- image: "photo-25"
-  width: 3024
-  height: 4528
-  alt: "A circular skylight framed by a spiral staircase"
-  row: 17
-  full_width: 1603
-- image: "photo-12"
-  width: 4528
-  height: 3024
-  alt: "A spiral staircase framing a colorful mural"
-  row: 17
-  full_width: 2400
 - image: "photo-13"
   width: 4528
   height: 3024
   alt: "Sunlight casting geometric shadows across a wall"
-  row: 18
+  row: 17
   full_width: 2400
 - image: "photo-16"
   width: 5336
   height: 4032
   alt: "An ornamental gateway and bare branches in black and white"
-  row: 18
+  row: 17
   full_width: 2400

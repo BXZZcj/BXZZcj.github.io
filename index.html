@@ -8,7 +8,7 @@ layout: home
   </div>
   <div class="profile-intro">
     <div class="bio">
-      <p>I am a PhD student at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> and Shanghai Innovation Institution. I received my bachelor's degree from <a href="https://www.tongji.edu.cn/">Tongji University</a>.</p>
+      <p>I am a PhD student at the <a href="https://soai.sjtu.edu.cn/">School of Artificial Intelligence, Shanghai Jiao Tong University</a> and Shanghai Innovation Institution. I received my bachelor's degree from <a href="https://www.tongji.edu.cn/">Tongji University</a>.</p>
       <p>I am interested in continual learning, multimodal learning, and robot learning.</p>
       <p class="contact"><a href="mailto:{{ site.social-email }}">{{ site.social-email }}</a></p>
       <nav class="profile-links" aria-label="Profile links">
@@ -26,45 +26,10 @@ layout: home
     <h2 id="photography-title">Photography &amp; travel</h2>
     <p>Hi! I love photography and travel. <a href="mailto:{{ site.social-email }}">Let's plan a photo shoot or a trip together!</a><br>Here are a few moments I've captured along the way.</p>
   </div>
-  <div class="photo-gallery">
-    {% assign rows = site.data.photography | group_by: 'row' %}
-    {% for row in rows %}
-      {% assign total_aspect = 0.0 %}
-      {% for photo in row.items %}
-        {% assign aspect = photo.width | times: 1.0 | divided_by: photo.height %}
-        {% assign total_aspect = total_aspect | plus: aspect %}
-      {% endfor %}
-      {% assign gutters = row.items.size | minus: 1 | times: 18 %}
-      {% assign available_width = 1064 | minus: gutters %}
-    <div class="photo-row">
-      {% for photo in row.items %}
-        {% assign aspect = photo.width | times: 1.0 | divided_by: photo.height %}
-        {% assign share = aspect | divided_by: total_aspect %}
-        {% assign desktop_width = available_width | times: share | ceil %}
-        {% assign viewport_width = share | times: 100 | ceil %}
-      <a class="photo" style="--aspect: {{ aspect }}" href="{{ '/assets/photography/' | append: photo.image | append: '-full.webp' | relative_url }}" aria-label="View photograph: {{ photo.alt | escape }}">
-        <img src="{{ '/assets/photography/' | append: photo.image | append: '-960.webp' | relative_url }}"
-          srcset="{{ '/assets/photography/' | append: photo.image | append: '-480.webp' | relative_url }} 480w, {{ '/assets/photography/' | append: photo.image | append: '-960.webp' | relative_url }} 960w, {{ '/assets/photography/' | append: photo.image | append: '-full.webp' | relative_url }} {{ photo.full_width }}w"
-          sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 1120px) {{ viewport_width }}vw, {{ desktop_width }}px"
-          width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt | escape }}"
-          loading="lazy" decoding="async">
-      </a>
-      {% endfor %}
-    </div>
-    {% endfor %}
-  </div>
+  {% include photo-gallery.html %}
 </section>
 
-<dialog class="lightbox" aria-label="Photography viewer">
-  <button class="lightbox-close" type="button" aria-label="Close photo viewer" autofocus>×</button>
-  <button class="lightbox-prev" type="button" aria-label="Previous photograph">‹</button>
-  <figure class="lightbox-figure">
-    <img class="lightbox-image" alt="">
-    <figcaption><span class="lightbox-caption"></span><span class="lightbox-count"></span></figcaption>
-  </figure>
-  <button class="lightbox-next" type="button" aria-label="Next photograph">›</button>
-  <span class="lightbox-announcement" aria-live="polite"></span>
-</dialog>
+{% include photo-viewer.html %}
 
 <footer class="page-footer">
   <p>Photographs by Jie Chu · <a href="#">Back to top ↑</a></p>

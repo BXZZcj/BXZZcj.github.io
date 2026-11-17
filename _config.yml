@@ -1,7 +1,7 @@
 title: Jie Chu
 description: > # this means to ignore newlines until "baseurl:"
-  Jie Chu is a PhD student at Shanghai Jiao Tong University and Shanghai
-  Innovation Institution, and a Tongji University graduate. Continual learning,
+  Jie Chu is a PhD student at the School of Artificial Intelligence, Shanghai
+  Jiao Tong University, and Shanghai Innovation Institution, and a Tongji University graduate. Continual learning,
   multimodal learning, robot learning, photography, and travel.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -12,7 +12,7 @@ site-twitter: #if your site has a twitter account, enter it here
 author: "Jie Chu<br>小君开药" # add your name
 author-img: JieChu.webp # add your photo
 about-author: 
-  "I am a PhD student at Shanghai Jiao Tong University and Shanghai Innovation Institution, specializing in Robot Learning." # add description
+  "I am a PhD student at the School of Artificial Intelligence, Shanghai Jiao Tong University, and Shanghai Innovation Institution. My interests include continual learning, multimodal learning, and robot learning." # add description
 # social-twitter: # add your Twitter handle
 # social-facebook: # add your Facebook handle
 social-github: BXZZcj # add your Github handle
