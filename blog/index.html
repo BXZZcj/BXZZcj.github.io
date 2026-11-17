@@ -1,0 +1,22 @@
+---
+layout: main
+title: Blog
+description: Notes on robotics, computer vision, and machine learning by Jie Chu.
+---
+<header class="blog-heading">
+  <h1>Blog</h1>
+  <p>Notes on robotics, computer vision, and machine learning.</p>
+</header>
+{% for post in paginator.posts %}
+<article class="post">
+  {% if post.img %}
+  <a class="post-thumbnail" style="background-image: url('{{ '/assets/img/' | append: post.img | relative_url }}')" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }}"></a>
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+    <span class="post-date">{{ post.date | date: '%Y, %b %d' }}</span>
+  </div>
+</article>
+{% endfor %}
+{% include pagination.html %}

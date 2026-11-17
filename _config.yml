@@ -1,8 +1,8 @@
-title: Hello, world! I'm Jie Chu
+title: Jie Chu
 description: > # this means to ignore newlines until "baseurl:"
-  Welcome to Jie Chu's Blog, dedicated to sharing insights and knowledge gained 
-  throughout Jie Chu's journey in learing AI.\n
-  About Jie Chu: PhD student at SJTU & SII.
+  Jie Chu is a PhD student at Shanghai Jiao Tong University and Shanghai
+  Innovation Institution, working on robot learning. Research, publications,
+  open-source projects, and personal notes.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://BXZZcj.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -18,6 +18,7 @@ about-author:
 social-github: BXZZcj # add your Github handle
 # social-linkedin: # add your Linkedin handle
 social-email: jiechutju@gmail.com # add your Email address
+social-scholar: https://scholar.google.com/citations?user=-CPEwpEAAAAJ&hl=en
 
 # # Disqus
 discus-identifier: https-bxzzcj-github-io # add your discus identifier
@@ -33,7 +34,7 @@ plugins:
   - jemoji
 
 paginate: 8
-paginate_path: "/page/:num"
+paginate_path: "/blog/page/:num/"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
