@@ -4,6 +4,10 @@ layout: default
 
 <aside class="sidebar">
   <header>
+    <nav class="blog-navigation" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
+    </nav>
     <div class="about">
       <div class="cover-author-image">
         <a href="{{site.baseurl}}/"><img

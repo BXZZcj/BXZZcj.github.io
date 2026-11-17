@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title | escape }}</title>
+  <meta name="description" content="{{ site.description | strip | escape }}">
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title | escape }}">
+  <meta property="og:description" content="{{ site.description | strip | escape }}">
+  <meta property="og:url" content="{{ '/' | absolute_url }}">
+  <link rel="icon" href="{{ '/assets/img/favicon/Ayanami_favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+</head>
+<body>
+  <main class="page">
+    {{ content }}
+  </main>
+  {% include analytics.html %}
+</body>
+</html>
