@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=dd4d9929">
+<link rel="stylesheet" href="style.css?v=5de65226">
 </head>
 <body>
 
@@ -201,6 +201,25 @@
     </div>
   </div>
   <div class="wrap-wide t-sym">
+    <div class="versus">
+      <div class="vs-pair">
+        <h4>Word Problem · GRPO</h4>
+        <div class="row">
+          <div class="ok"><div class="lab">After RL <span>4 frames ✓</span></div><img src="assets/gif/rl_wp_rl.gif" alt="Word problem after RL: one equation per frame"></div>
+          <div class="bad"><div class="lab">Before RL <span>2 frames ✗</span></div><img src="assets/gif/rl_wp_start.gif" alt="Word problem before RL: all equations in one frame"></div>
+        </div>
+        <p class="vs-note">Before RL the model crams every equation into one frame and gets them wrong. After RL it writes one equation per frame.</p>
+      </div>
+      <div class="vs-pair">
+        <h4>Compute Then Paint · RFT</h4>
+        <div class="row">
+          <div class="ok"><div class="lab">After RL <span>19 frames ✓</span></div><img src="assets/gif/rl_cpc_rl.gif" alt="Compute then paint after RL: boxes A once and paints it"></div>
+          <div class="bad"><div class="lab">Before RL <span>25 frames ✗</span></div><img src="assets/gif/rl_cpc_start.gif" alt="Compute then paint before RL: moves the box back and forth and paints the wrong region"></div>
+        </div>
+        <p class="vs-note">Before RL the model moves the box back and forth and paints the wrong region. After RL it boxes A once and paints it.</p>
+      </div>
+    </div>
+    <p class="vs-caption">130M models on unseen test problems, same problem and same sampling noise for both.</p>
     <figure class="card"><img src="assets/fig/RL_results.png" alt="RL results"></figure>
   </div>
 
