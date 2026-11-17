@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel is All You Need</title>
+<meta name="description" content="Purely pixel-space generative models that read, reason and write on the canvas, with no text tokens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <canvas id="nav-canvas" aria-hidden="true"></canvas>
+  <div class="wrap-wide">
+    <a class="brand" href="#top"><span>Pixel is All You Need</span></a>
+    <ul>
+      <li><a href="#abstract">Abstract</a></li>
+      <li><a href="#generators">Current Generators</a></li>
+      <li><a href="#pixel">Pixel models</a></li>
+      <li><a href="#cite">Cite</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap-wide">
+    <h1>Pixel is All You Need</h1>
+    <p class="tagline">Read, reason and write <em>in pixels</em>.</p>
+    <div class="tags"><span>No text tokens</span><span>No tokenizer</span><span>No text encoder</span></div>
+
+    <div class="authors">
+      <a href="https://bxzzcj.github.io/" target="_blank" rel="noopener">Jie Chu</a><sup>1,2</sup><span class="sep">·</span>
+      <span class="n">Haoting Shi</span><sup>1</sup><span class="sep">·</span>
+      <span class="n">Fucheng Zhang</span><sup>2</sup><span class="sep">·</span>
+      <span class="n">Jiawei Liu</span><sup>1,2</sup><span class="sep">·</span>
+      <span class="n">Junwei Liao</span><sup>1,2</sup><span class="sep">·</span>
+      <span class="n">Ying Wen</span><sup>1,2</sup><span class="sep">·</span>
+      <span class="n">Muning Wen</span><sup>1</sup>
+    </div>
+    <div class="affil"><sup>1</sup> Shanghai Jiao Tong University &nbsp;&nbsp; <sup>2</sup> Shanghai Innovation Institute</div>
+
+    <div class="buttons">
+      <a class="btn paper" href="assets/paper/pixel_is_all_you_need.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v1.6H8V13zm0 3.4h8V18H8v-1.6z"/></svg>Paper</a>
+      <a class="btn code" href="https://github.com/bxzzcj/pixel-is-all-you-need" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Code</a>
+      <a class="btn bib" href="#cite">
+        <svg viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v18l-8-4-8 4V4a2 2 0 0 1 2-2z"/></svg>BibTeX</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 01 ABSTRACT -->
+<section id="abstract" class="t-geo">
+  <div class="wrap">
+    <div class="eyebrow"><b>01</b> / Abstract</div>
+    <h2>Unifying all modalities <span class="hl">within vision</span></h2>
+    <div class="abstract">
+      <p>Text, images, audio, touch, and even robot actions can, in principle, all be rendered onto a single canvas, suggesting an ambitious goal of unifying all modalities within vision. Language provides the natural first test. To subsume it, a visual model must reason directly over text in pixels. Across a wide range of image, video, and unified multimodal generators, however, we find that <mark>their visual generation modules cannot perform symbolic reasoning over text on the canvas</mark>. They succeed only when an underlying text module or prompt rewriter already supplies the answer, effectively reducing the generator to a mere renderer, a limitation that post-training does little to resolve. To test whether this failure stems from pixels themselves or from current training paradigms, <mark>we train a family of purely pixel-space generative models from scratch without any text pathway</mark>. With images as their sole input and output, these models read questions, write intermediate steps, and produce answers directly on the canvas. Remarkably, they exhibit hallmark behaviors of large language models. <mark>Performance improves predictably with scale following a power law</mark>. <mark>Writing intermediate steps frame by frame substantially outperforms single-frame answering</mark>, echoing chain-of-thought, while reinforcement-learning post-training further strengthens reasoning. Moreover, <mark>sharing one canvas allows the same model to reason across modalities</mark>, a capability that text-only language models lack. To the best of our knowledge, this is the first systematic study of these phenomena in purely pixel-space generative models free of text tokens.</p>
+    </div>
+  </div>
+  <div class="wrap-wide">
+    <figure class="card">
+      <img src="assets/fig/main_ab.png" alt="Unifying modalities in visual space, and current generators relying on text tokens">
+    </figure>
+    <div class="hero-panel">
+      <div class="panel-h"><b>Pure pixel model</b> (Ours)</div>
+      <div class="player t-col" id="player">
+        <div class="tabs" id="tabs">
+          <div class="grp t-col">Across modalities</div>
+          <button class="t-col" data-k="compute_then_paint">Compute Then Paint</button>
+          <button class="t-col" data-k="count_then_paint">Count Then Paint</button>
+          <button class="t-col" data-k="trace_then_sum">Trace Then Sum</button>
+          <button class="t-col" data-k="curve_tracing">Curve Tracing</button>
+          <button class="t-col" data-k="sum_maze">Sum Mazes</button>
+          <button class="t-col" data-k="maze">Mazes</button>
+          <div class="grp t-geo">Text</div>
+          <button class="t-geo" data-k="word_problem">Word Problems</button>
+          <button class="t-geo" data-k="multiplication">Multiplication</button>
+          <button class="t-geo" data-k="expression">Expressions</button>
+          <button class="t-geo" data-k="factual">Factual Questions</button>
+        </div>
+        <div class="stage">
+          <img id="stage-img" src="assets/gif/compute_then_paint.gif" alt="Model rollout">
+          <div>
+            <div class="ans-l">Question</div>
+            <div class="q" id="stage-q"></div>
+            <div class="ans-l">Answer</div>
+            <div class="ans" id="stage-ans"></div>
+            <div class="src" id="stage-src"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 GENERATORS -->
+<section id="generators" class="t-str">
+  <div class="wrap">
+    <div class="eyebrow"><b>02</b> / Current generators</div>
+    <h2>Generators are <span class="hl">renderers</span>, not reasoners</h2>
+    <p class="lead">Image editing, video generation and unified multimodal models (UMM). They paint the answer only when text tokens hand it over.</p>
+  </div>
+  <div class="wrap-wide">
+    <div class="two">
+      <figure class="card">
+        <img src="assets/fig/fig2_a_tasks.png" alt="Benchmark tasks">
+      </figure>
+      <figure class="card">
+        <img src="assets/fig/fig2_b_lora.png" alt="LoRA post training">
+        <figcaption>Post training learns to copy, not to reason</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="wrap">
+    <figure class="card table-card">
+      <table class="tbl">
+        <thead><tr><th>Model</th><th>Default</th><th>Rewrite</th><th>Delete</th></tr></thead>
+        <tbody>
+          <tr class="grp"><td colspan="4">Image editing</td></tr>
+          <tr><td>GPT-Image-2.5</td><td class="na">·</td><td class="b">98.0</td><td class="na">·</td></tr>
+          <tr><td>Gemini-3-Pro-Image</td><td class="na">·</td><td class="b">94.1</td><td class="na">·</td></tr>
+          <tr><td>Nano-Banana-2.1</td><td class="na">·</td><td class="b">92.0</td><td class="na">·</td></tr>
+          <tr><td>Qwen-Image-2.0-Pro</td><td class="z">0.0</td><td class="b">91.7</td><td class="na">·</td></tr>
+          <tr><td>Qwen-Image-2.1</td><td class="z">0.0</td><td class="b">86.0</td><td class="z">0.0</td></tr>
+          <tr><td>FLUX.3-klein</td><td class="z">0.0</td><td class="b">83.4</td><td class="z">0.0</td></tr>
+          <tr><td>Wan2.6-Image</td><td class="z">0.0</td><td class="b">81.7</td><td class="na">·</td></tr>
+          <tr><td>FLUX.2-klein</td><td class="z">0.0</td><td class="b">55.5</td><td class="z">0.0</td></tr>
+          <tr><td>LongCat-Image-Edit</td><td class="z">0.0</td><td class="b">20.4</td><td class="z">0.0</td></tr>
+          <tr class="grp"><td colspan="4">Video generation</td></tr>
+          <tr><td>MiniMax-H3</td><td>1.4</td><td class="b">98.3</td><td class="z">0.0</td></tr>
+          <tr><td>Wan 3.0</td><td class="z">0.0</td><td class="b">83.3</td><td class="na">·</td></tr>
+          <tr><td>OmniWeaving</td><td class="z">0.0</td><td class="b">24.0</td><td class="z">0.0</td></tr>
+          <tr><td>Cosmos3</td><td class="z">0.0</td><td class="b">13.6</td><td class="z">0.0</td></tr>
+          <tr><td>Wan2.2</td><td class="z">0.0</td><td class="b">0.7</td><td class="z">0.0</td></tr>
+          <tr class="grp"><td colspan="4">Unified multimodal</td></tr>
+          <tr class="sub"><td></td><td>Default</td><td>Render</td><td>Think</td></tr>
+          <tr><td>SenseNova</td><td>18.7</td><td class="b">99.7</td><td>96.0</td></tr>
+          <tr><td>Emu3.5</td><td class="z">0.0</td><td class="b">27.0</td><td>0.5</td></tr>
+          <tr><td>BAGEL</td><td class="z">0.0</td><td class="b">13.3</td><td>0.7</td></tr>
+          <tr><td>InternVL-U</td><td class="z">0.0</td><td>1.3</td><td class="b">12.0</td></tr>
+        </tbody>
+      </table>
+      <figcaption>Accuracy (%). Rewrite and Render put the answer in text tokens first.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 03 PIXEL MODELS -->
+<section id="pixel" class="t-geo">
+  <div class="wrap">
+    <div class="eyebrow"><b>03</b> / Pixel models</div>
+    <h2>Only <span class="hl">pixels</span> in, only pixels out</h2>
+    <p class="lead">Trained from scratch, 7.6M to 458M parameters. They behave like LLMs.</p>
+
+    <div class="finding t-geo">
+      <div class="k"><h3>Scaling</h3><p class="set">Fit up to 130M, predict 458M.</p></div>
+    </div>
+  </div>
+  <div class="wrap-wide">
+    <figure class="card"><img src="assets/fig/4_scaling.png" alt="Scaling laws"></figure>
+  </div>
+
+  <div class="wrap">
+    <div class="finding t-col">
+      <div class="k"><h3>Chain of thought</h3><p class="set">Same model, frame by frame vs direct.</p></div>
+      <p class="claim">Chain of thought beats direct answering, just as in LLMs.</p>
+    </div>
+  </div>
+  <div class="wrap-wide t-col">
+    <div class="versus">
+      <div class="vs-pair">
+        <h4>Word Problem</h4>
+        <div class="row">
+          <div class="ok"><div class="lab">Frame by frame <span>48 ✓</span></div><img src="assets/gif/word_problem.gif" alt="Word problem, frame by frame"></div>
+          <div class="bad"><div class="lab">Direct <span>126 ✗</span></div><img src="assets/gif/word_problem_direct.gif" alt="Word problem, direct"></div>
+        </div>
+      </div>
+      <div class="vs-pair">
+        <h4>Multiplication</h4>
+        <div class="row">
+          <div class="ok"><div class="lab">Frame by frame <span>238680 ✓</span></div><img src="assets/gif/multiplication.gif" alt="Multiplication, frame by frame"></div>
+          <div class="bad"><div class="lab">Direct <span>230800 ✗</span></div><img src="assets/gif/multiplication_direct.gif" alt="Multiplication, direct"></div>
+        </div>
+      </div>
+    </div>
+    <figure class="card"><img src="assets/fig/Cot_results.png" alt="Chain of thought results"></figure>
+  </div>
+
+  <div class="wrap">
+    <div class="finding t-sym">
+      <div class="k"><h3>RL Post-Training</h3><p class="set">Same start model, equal compute. SFT on non-optimal demonstrations, SFT on optimal demonstrations, RL.</p></div>
+      <p class="claim">RL works.</p>
+    </div>
+  </div>
+  <div class="wrap-wide t-sym">
+    <figure class="card"><img src="assets/fig/RL_results.png" alt="RL results"></figure>
+  </div>
+
+  <div class="wrap-wide">
+    <p class="closing">Vision is a credible substrate for <span>unifying language with other modalities</span>.</p>
+  </div>
+</section>
+
+<!-- 04 CITE -->
+<section id="cite" class="t-geo">
+  <div class="wrap">
+    <div class="eyebrow"><b>04</b> / Citation</div>
+    <h2>Cite</h2>
+    <div class="bibwrap">
+      <button class="copy" id="copy">Copy</button>
+<pre class="bib" id="bib">@article{chu2026pixel,
+  title  = {Pixel is All You Need},
+  author = {Chu, Jie and Shi, Haoting and Zhang, Fucheng and Liu, Jiawei and Liao, Junwei and Wen, Ying and Wen, Muning},
+  year   = {2026}
+}</pre>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Pixel is All You Need · 2026</div>
+</footer>
+
+<script>
+const CASES = {
+  compute_then_paint: { th: "col", q: "paint where dots = 6-3", a: "B" },
+  trace_then_sum:     { th: "col", q: "C+D=?", a: "15" },
+  count_then_paint:   { th: "col", q: "paint the most dots", a: "C", gt: true },
+  curve_tracing:      { th: "col", q: "where does D end?", a: "4", gt: true },
+  sum_maze:           { th: "col", q: "Sum from S to G:", a: "30" },
+  maze:               { th: "col", q: "Path from S to G:", a: "RRURRUUUL" },
+  word_problem:       { th: "geo", q: "A short story about Luke and his apples", a: "48" },
+  multiplication:     { th: "geo", q: "340×702", a: "238680" },
+  expression:         { th: "geo", q: "17+9+1+12*13", a: "183" },
+  factual:            { th: "geo", q: "In which country does the mother of George Turner live?", a: "Poland" }
+};
+const img = document.getElementById("stage-img");
+const player = document.getElementById("player");
+function show(k) {
+  const c = CASES[k];
+  document.getElementById("stage-q").textContent = c.q;
+  document.getElementById("stage-ans").textContent = c.a;
+  document.getElementById("stage-src").textContent = c.gt ? "Training demonstration" : "Model rollout, unseen problem";
+  player.className = "player t-" + c.th;
+  img.src = "assets/gif/" + k + ".gif?" + Date.now();
+  img.alt = k.replace(/_/g, " ") + " rollout";
+  document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.k === k));
+}
+document.querySelectorAll("#tabs button").forEach(b => b.addEventListener("click", () => show(b.dataset.k)));
+show("compute_then_paint");
+document.getElementById("copy").addEventListener("click", () => {
+  navigator.clipboard.writeText(document.getElementById("bib").textContent);
+  document.getElementById("copy").textContent = "Copied";
+});
+// nav: a pixel ruler. Ticks along the bottom edge, a faint pixel grid, cells light up near the cursor.
+(() => {
+  const cv = document.getElementById("nav-canvas"), nav = cv.parentElement, ctx = cv.getContext("2d");
+  const G = 16, INK = "28,28,26", PAL = ["44,106,160", "52,148,69", "208,138,26", "180,72,42", "111,58,151"];
+  let W = 0, H = 0, cols = 0, rows = 0, heat = [], hue = [], mx = -999, my = -999, raf = 0;
+  function size() {
+    const r = nav.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+    W = r.width; H = r.height; cv.width = W * d; cv.height = H * d;
+    ctx.setTransform(d, 0, 0, d, 0, 0);
+    cols = Math.ceil(W / G) + 1; rows = Math.ceil(H / G);
+    heat = new Float32Array(cols * rows);
+    hue = Array.from({ length: cols * rows }, () => PAL[(Math.random() * PAL.length) | 0]);
+    draw();
+  }
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    let live = false;
+    for (let j = 0; j < rows - 1; j++) for (let i = 0; i < cols; i++) {
+      const k = j * cols + i, x = i * G + G / 2, y = j * G + G / 2;
+      const d = Math.hypot(x - mx, y - my);
+      if (d < 56) heat[k] = Math.max(heat[k], 1 - d / 56);
+      const h = heat[k];
+      if (h > 0.02) {
+        const s = 2 + h * 8;
+        ctx.fillStyle = `rgba(${hue[k]},${0.12 + h * 0.4})`;
+        ctx.fillRect(x - s / 2, y - s / 2, s, s);
+        heat[k] *= 0.94; live = true;
+      } else {
+        heat[k] = 0;
+        ctx.fillStyle = `rgba(${INK},.13)`;
+        ctx.fillRect(x - 1, y - 1, 2, 2);
+      }
+    }
+    // ruler ticks: every 8 px, longer every 40 px, longest every 160 px with a label
+    ctx.font = "8.5px 'JetBrains Mono', monospace"; ctx.textBaseline = "bottom";
+    for (let x = 0; x <= W; x += 8) {
+      const major = x % 160 === 0, mid = x % 40 === 0;
+      let len = major ? 10 : mid ? 6 : 3;
+      const near = Math.abs(x - mx);
+      if (my > -999 && near < 48) len += (1 - near / 48) * 6;
+      ctx.fillStyle = `rgba(${INK},${major ? .42 : mid ? .3 : .2})`;
+      ctx.fillRect(x, H - len, 1, len);
+      if (major && x > 0) { ctx.fillStyle = `rgba(${INK},.32)`; ctx.fillText(String(x), x + 3, H - 3); }
+    }
+    // cursor marker on the ruler
+    if (my > -999) {
+      ctx.fillStyle = `rgba(${PAL[0]},.75)`; ctx.fillRect(Math.round(mx), H - 16, 1, 16);
+    }
+    raf = live || my > -999 ? requestAnimationFrame(draw) : 0;
+  }
+  nav.addEventListener("mousemove", e => {
+    const r = nav.getBoundingClientRect(); mx = e.clientX - r.left; my = e.clientY - r.top;
+    if (!raf) raf = requestAnimationFrame(draw);
+  });
+  nav.addEventListener("mouseleave", () => { mx = my = -999; if (!raf) raf = requestAnimationFrame(draw); });
+  window.addEventListener("resize", size);
+  if (document.fonts) document.fonts.ready.then(draw);
+  size();
+})();
+</script>
+</body>
+</html>

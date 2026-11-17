@@ -3,6 +3,7 @@
 Jekyll site published by GitHub Pages from the `main` branch.
 
 - `/`: personal introduction and photography gallery; edit `index.html` for the introduction.
+- `/pixel-is-all-you-need/`: standalone paper page with its own stylesheet, figures, animated examples, and PDF.
 - `/photography/`: standalone photography sharing page with its own non-academic metadata. It has no homepage/blog links, is excluded from the sitemap, and requests no indexing. This is an unlisted public page, not access control.
 - `_includes/photo-gallery.html` and `_includes/photo-viewer.html`: shared gallery and viewer markup for both pages.
 - `_data/photography.yml`: curated reading order, row pairings, dimensions, and image descriptions.
