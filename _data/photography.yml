@@ -1,176 +1,264 @@
-- image: photo-18
+- image: "photo-18"
   width: 4528
   height: 3024
   alt: "A winding river beneath golden evening light"
-- image: photo-03
-  width: 3024
-  height: 4528
-  alt: "Wildflowers and tall pines below snowy mountains"
-- image: photo-31
-  width: 4000
-  height: 2670
-  alt: "A hand holding wildflowers beside a lake"
-- image: photo-39
-  width: 3024
-  height: 4528
-  alt: "Wind-shaped sand dunes in warm light"
-- image: photo-38
-  width: 3024
-  height: 4528
-  alt: "Repeating balconies around a bright stairwell"
-- image: photo-34
+  row: 1
+  full_width: 2400
+- image: "photo-34"
   width: 4000
   height: 1915
   alt: "A river winding through sunlit golden grassland"
-- image: photo-10
-  width: 4528
-  height: 3024
-  alt: "A traveler gathering flowers beside a blue lake"
-- image: photo-42
-  width: 4528
-  height: 3024
-  alt: "A small animal perched on a tree branch"
-- image: photo-15
-  width: 4528
-  height: 3024
-  alt: "Two cranes wading in clear water"
-- image: photo-35
-  width: 4000
-  height: 2670
-  alt: "Layered mountain slopes in warm evening light"
-- image: photo-29
-  width: 2457
-  height: 3024
-  alt: "A traveler resting beneath a leafy tree"
-- image: photo-36
-  width: 5712
-  height: 3114
-  alt: "Sunbeams breaking through clouds above a winding river"
-- image: photo-02
-  width: 4032
-  height: 6048
-  alt: "A golden chandelier beneath a domed ceiling"
-- image: photo-44
-  width: 2121
-  height: 2524
-  alt: "Two swans splashing in the water"
-- image: photo-06
-  width: 4528
-  height: 3024
-  alt: "A weathered tree stump among mountain wildflowers"
-- image: photo-33
+  row: 1
+  full_width: 2400
+- image: "photo-33"
   width: 2670
   height: 4000
   alt: "A grazing animal against golden rolling hills"
-- image: photo-21
-  width: 3024
-  height: 4528
-  alt: "Curving balconies and a spiral staircase"
-- image: photo-28
-  width: 4528
-  height: 3024
-  alt: "Two people resting beside a table and an earthen wall"
-- image: photo-08
-  width: 4032
-  height: 6048
-  alt: "A single dried stem in the snow"
-- image: photo-40
-  width: 4528
-  height: 3024
-  alt: "A forest lake beneath bright clouds and autumn hills"
-- image: photo-30
-  width: 3024
-  height: 4528
-  alt: "A smiling child holding a young animal in a meadow"
-- image: photo-16
-  width: 5336
-  height: 4032
-  alt: "An ornamental gateway and bare branches in black and white"
-- image: photo-17
-  width: 4528
-  height: 3024
-  alt: "Travelers in a red pedal boat on a blue lake"
-- image: photo-23
-  width: 3024
-  height: 4528
-  alt: "A spiral staircase seen from below"
-- image: photo-11
-  width: 6040
-  height: 3617
-  alt: "A lone tree in a wide snowy landscape"
-- image: photo-41
-  width: 4528
-  height: 3024
-  alt: "A close-up of a small ornament on a traveler’s jacket"
-- image: photo-27
-  width: 4528
-  height: 3024
-  alt: "Travelers dwarfed by a vast rocky mountain"
-- image: photo-04
-  width: 4528
-  height: 3024
-  alt: "A hiker walking through a mountain meadow"
-- image: photo-19
+  row: 2
+  full_width: 1602
+- image: "photo-19"
   width: 4528
   height: 3024
   alt: "A wooden cart and fence above autumn grassland"
-- image: photo-25
+  row: 2
+  full_width: 2400
+- image: "photo-39"
   width: 3024
   height: 4528
-  alt: "A circular skylight framed by a spiral staircase"
-- image: photo-14
+  alt: "Wind-shaped sand dunes in warm light"
+  row: 2
+  full_width: 1603
+- image: "photo-27"
   width: 4528
   height: 3024
-  alt: "A crane beside reeds and open water"
-- image: photo-32
-  width: 3024
-  height: 4528
-  alt: "Tiny figures on a green shore beside a blue lake"
-- image: photo-26
-  width: 4528
-  height: 3024
-  alt: "A vintage radio and household objects in warm light"
-- image: photo-01
-  width: 4528
-  height: 3024
-  alt: "A traveler standing before snow-capped mountains"
-- image: photo-37
+  alt: "Travelers dwarfed by a vast rocky mountain"
+  row: 3
+  full_width: 2400
+- image: "photo-35"
+  width: 4000
+  height: 2670
+  alt: "Layered mountain slopes in warm evening light"
+  row: 3
+  full_width: 2400
+- image: "photo-37"
   width: 6027
   height: 1402
   alt: "A panoramic view of distant snowy mountains"
-- image: photo-22
-  width: 3024
-  height: 4528
-  alt: "Warm-toned stairways circling an open atrium"
-- image: photo-09
+  row: 4
+  full_width: 2400
+- image: "photo-11"
+  width: 6040
+  height: 3617
+  alt: "A lone tree in a wide snowy landscape"
+  row: 5
+  full_width: 2400
+- image: "photo-09"
   width: 6048
   height: 4032
   alt: "Two snow-covered plants in a winter field"
-- image: photo-43
+  row: 5
+  full_width: 2400
+- image: "photo-08"
+  width: 4032
+  height: 6048
+  alt: "A single dried stem in the snow"
+  row: 5
+  full_width: 1600
+- image: "photo-32"
+  width: 3024
+  height: 4528
+  alt: "Tiny figures on a green shore beside a blue lake"
+  row: 6
+  full_width: 1603
+- image: "photo-31"
+  width: 4000
+  height: 2670
+  alt: "A hand holding wildflowers beside a lake"
+  row: 6
+  full_width: 2400
+- image: "photo-10"
   width: 4528
   height: 3024
-  alt: "An old television and household objects beside an earthen wall"
-- image: photo-05
+  alt: "A traveler gathering flowers beside a blue lake"
+  row: 6
+  full_width: 2400
+- image: "photo-03"
+  width: 3024
+  height: 4528
+  alt: "Wildflowers and tall pines below snowy mountains"
+  row: 7
+  full_width: 1603
+- image: "photo-06"
+  width: 4528
+  height: 3024
+  alt: "A weathered tree stump among mountain wildflowers"
+  row: 7
+  full_width: 2400
+- image: "photo-05"
   width: 3024
   height: 4528
   alt: "Travelers beneath a blue sky and snowy peaks"
-- image: photo-20
-  width: 3024
-  height: 4528
-  alt: "A view through the center of a tall spiral stairwell"
-- image: photo-07
+  row: 7
+  full_width: 1603
+- image: "photo-01"
+  width: 4528
+  height: 3024
+  alt: "A traveler standing before snow-capped mountains"
+  row: 8
+  full_width: 2400
+- image: "photo-04"
+  width: 4528
+  height: 3024
+  alt: "A hiker walking through a mountain meadow"
+  row: 8
+  full_width: 2400
+- image: "photo-36"
+  width: 5712
+  height: 3114
+  alt: "Sunbeams breaking through clouds above a winding river"
+  row: 9
+  full_width: 2400
+- image: "photo-40"
+  width: 4528
+  height: 3024
+  alt: "A forest lake beneath bright clouds and autumn hills"
+  row: 9
+  full_width: 2400
+- image: "photo-14"
+  width: 4528
+  height: 3024
+  alt: "A crane beside reeds and open water"
+  row: 10
+  full_width: 2400
+- image: "photo-15"
+  width: 4528
+  height: 3024
+  alt: "Two cranes wading in clear water"
+  row: 10
+  full_width: 2400
+- image: "photo-44"
+  width: 2121
+  height: 2524
+  alt: "Two swans splashing in the water"
+  row: 11
+  full_width: 2017
+- image: "photo-42"
+  width: 4528
+  height: 3024
+  alt: "A small bird perched on a diagonal branch against a pale blue sky"
+  row: 11
+  full_width: 2400
+- image: "photo-41"
+  width: 4528
+  height: 3024
+  alt: "A small bird clinging to a backpack against golden foliage"
+  row: 11
+  full_width: 2400
+- image: "photo-07"
   width: 3024
   height: 4528
   alt: "A rider in a red jacket on horseback"
-- image: photo-24
+  row: 12
+  full_width: 1603
+- image: "photo-30"
+  width: 3024
+  height: 4528
+  alt: "A smiling child holding a young animal in a meadow"
+  row: 12
+  full_width: 1603
+- image: "photo-29"
+  width: 2457
+  height: 3024
+  alt: "A traveler resting beneath a leafy tree"
+  row: 12
+  full_width: 1950
+- image: "photo-17"
+  width: 4528
+  height: 3024
+  alt: "Travelers in a red pedal boat on a blue lake"
+  row: 13
+  full_width: 2400
+- image: "photo-28"
+  width: 4528
+  height: 3024
+  alt: "Two people resting beside a table and an earthen wall"
+  row: 13
+  full_width: 2400
+- image: "photo-26"
+  width: 4528
+  height: 3024
+  alt: "A vintage radio and household objects in warm light"
+  row: 14
+  full_width: 2400
+- image: "photo-43"
+  width: 4528
+  height: 3024
+  alt: "An old television and household objects beside an earthen wall"
+  row: 14
+  full_width: 2400
+- image: "photo-02"
+  width: 4032
+  height: 6048
+  alt: "A golden chandelier beneath a domed ceiling"
+  row: 15
+  full_width: 1600
+- image: "photo-22"
+  width: 3024
+  height: 4528
+  alt: "Warm-toned stairways circling an open atrium"
+  row: 15
+  full_width: 1603
+- image: "photo-38"
+  width: 3024
+  height: 4528
+  alt: "Repeating balconies around a bright stairwell"
+  row: 15
+  full_width: 1603
+- image: "photo-20"
+  width: 3024
+  height: 4528
+  alt: "A view through the center of a tall spiral stairwell"
+  row: 16
+  full_width: 1603
+- image: "photo-21"
+  width: 3024
+  height: 4528
+  alt: "Curving balconies and a spiral staircase"
+  row: 16
+  full_width: 1603
+- image: "photo-23"
+  width: 3024
+  height: 4528
+  alt: "A spiral staircase seen from below"
+  row: 16
+  full_width: 1603
+- image: "photo-24"
   width: 3024
   height: 4528
   alt: "Railings and steps tracing a spiral toward the sky"
-- image: photo-12
+  row: 17
+  full_width: 1603
+- image: "photo-25"
+  width: 3024
+  height: 4528
+  alt: "A circular skylight framed by a spiral staircase"
+  row: 17
+  full_width: 1603
+- image: "photo-12"
   width: 4528
   height: 3024
   alt: "A spiral staircase framing a colorful mural"
-- image: photo-13
+  row: 17
+  full_width: 2400
+- image: "photo-13"
   width: 4528
   height: 3024
   alt: "Sunlight casting geometric shadows across a wall"
+  row: 18
+  full_width: 2400
+- image: "photo-16"
+  width: 5336
+  height: 4032
+  alt: "An ornamental gateway and bare branches in black and white"
+  row: 18
+  full_width: 2400

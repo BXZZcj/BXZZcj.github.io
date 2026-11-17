@@ -14,13 +14,13 @@ body.viewer-open { overflow: hidden; }
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { color: #806243; }
 a:focus-visible, button:focus-visible { outline: 2px solid #806243; outline-offset: 5px; }
-.profile-header { max-width: 820px; margin: 0 auto; }
+.profile-header { width: 100%; }
 .heading-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 22px; }
 h1 { margin: 0; font-size: 38px; line-height: 1.25; font-weight: 600; }
 h2 { margin: 0 0 12px; font-size: 27px; font-weight: 500; line-height: 1.4; }
 p { margin: 0 0 13px; }
-.profile-intro { display: grid; grid-template-columns: minmax(0, 1fr) 176px; gap: 44px; align-items: start; }
-.portrait { width: 176px; height: 176px; border-radius: 4px; display: block; }
+.profile-intro { display: grid; grid-template-columns: minmax(0, 1fr) 192px; gap: 64px; align-items: center; }
+.portrait { width: 192px; height: 192px; border-radius: 4px; display: block; }
 .contact { margin: 18px 0 3px; font-size: 16px; }
 .contact a { text-decoration: none; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-size: 16px; }
@@ -31,8 +31,9 @@ p { margin: 0 0 13px; }
 .photography { margin-top: 55px; border-top: 1px solid #e8e6e0; padding-top: 32px; }
 .gallery-intro { margin: 0 0 30px; }
 .gallery-intro p { margin: 0; color: #68665f; font-size: 16px; line-height: 1.9; }
-.photo-gallery { columns: 3; column-gap: 18px; }
-.photo { display: block; break-inside: avoid; margin: 0 0 18px; cursor: zoom-in; }
+.photo-gallery { display: grid; gap: 18px; }
+.photo-row { display: flex; gap: 18px; align-items: flex-start; }
+.photo { display: block; flex: var(--aspect) 1 0; min-width: 0; cursor: zoom-in; }
 .photo img { display: block; width: 100%; height: auto; background: #f1efeb; }
 .photo:focus-visible { outline-offset: 4px; }
 .page-footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e8e6e0; font-size: 14px; color: #77746b; }
@@ -52,8 +53,7 @@ p { margin: 0 0 13px; }
 .lightbox-next { right: 12px; top: calc(50% - 24px); }
 .lightbox-announcement { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 @media (max-width: 900px) {
-  .photo-gallery { columns: 2; column-gap: 12px; }
-  .photo { margin-bottom: 12px; }
+  .photo-gallery, .photo-row { gap: 12px; }
   .profile-intro { gap: 28px; }
 }
 @media (max-width: 600px) {
@@ -65,8 +65,7 @@ p { margin: 0 0 13px; }
   .portrait { grid-row: 1; width: 128px; height: 128px; }
   .photography { margin-top: 36px; padding-top: 26px; }
   .gallery-intro { margin-bottom: 24px; }
-  .photo-gallery { columns: 1; }
-  .photo { margin-bottom: 14px; }
+  .photo-gallery, .photo-row { display: grid; gap: 14px; }
   .lightbox { padding: 64px 16px 80px; }
   .lightbox-image { max-height: calc(100dvh - 230px); }
   .lightbox figcaption { font-size: 14px; gap: 14px; }

@@ -24,17 +24,33 @@ layout: home
 <section class="photography" aria-labelledby="photography-title">
   <div class="gallery-intro">
     <h2 id="photography-title">Photography &amp; travel</h2>
-    <p lang="zh-CN">Hi! 我热爱摄影与旅行，欢迎<a href="mailto:{{ site.social-email }}">约拍、约旅行</a>！<br>这里是我在路上拍下的一些瞬间。</p>
+    <p>Hi! I love photography and travel. <a href="mailto:{{ site.social-email }}">Let's plan a photo shoot or a trip together!</a><br>Here are a few moments I've captured along the way.</p>
   </div>
   <div class="photo-gallery">
-    {% for photo in site.data.photography %}
-    <a class="photo" href="{{ '/assets/photography/' | append: photo.image | append: '-full.webp' | relative_url }}" data-photo-index="{{ forloop.index0 }}" aria-label="View photograph: {{ photo.alt | escape }}">
-      <img src="{{ '/assets/photography/' | append: photo.image | append: '-960.webp' | relative_url }}"
-        srcset="{{ '/assets/photography/' | append: photo.image | append: '-480.webp' | relative_url }} 480w, {{ '/assets/photography/' | append: photo.image | append: '-960.webp' | relative_url }} 960w"
-        sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 900px) calc((100vw - 68px) / 2), 340px"
-        width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt | escape }}"
-        loading="lazy" decoding="async">
-    </a>
+    {% assign rows = site.data.photography | group_by: 'row' %}
+    {% for row in rows %}
+      {% assign total_aspect = 0.0 %}
+      {% for photo in row.items %}
+        {% assign aspect = photo.width | times: 1.0 | divided_by: photo.height %}
+        {% assign total_aspect = total_aspect | plus: aspect %}
+      {% endfor %}
+      {% assign gutters = row.items.size | minus: 1 | times: 18 %}
+      {% assign available_width = 1064 | minus: gutters %}
+    <div class="photo-row">
+      {% for photo in row.items %}
+        {% assign aspect = photo.width | times: 1.0 | divided_by: photo.height %}
+        {% assign share = aspect | divided_by: total_aspect %}
+        {% assign desktop_width = available_width | times: share | ceil %}
+        {% assign viewport_width = share | times: 100 | ceil %}
+      <a class="photo" style="--aspect: {{ aspect }}" href="{{ '/assets/photography/' | append: photo.image | append: '-full.webp' | relative_url }}" aria-label="View photograph: {{ photo.alt | escape }}">
+        <img src="{{ '/assets/photography/' | append: photo.image | append: '-960.webp' | relative_url }}"
+          srcset="{{ '/assets/photography/' | append: photo.image | append: '-480.webp' | relative_url }} 480w, {{ '/assets/photography/' | append: photo.image | append: '-960.webp' | relative_url }} 960w, {{ '/assets/photography/' | append: photo.image | append: '-full.webp' | relative_url }} {{ photo.full_width }}w"
+          sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 1120px) {{ viewport_width }}vw, {{ desktop_width }}px"
+          width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt | escape }}"
+          loading="lazy" decoding="async">
+      </a>
+      {% endfor %}
+    </div>
     {% endfor %}
   </div>
 </section>
