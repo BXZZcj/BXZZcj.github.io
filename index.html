@@ -6,73 +6,50 @@ layout: home
     <h1>Jie Chu</h1>
     <a class="blog-tab" href="{{ '/blog/' | relative_url }}">Blog <span aria-hidden="true">↗</span></a>
   </div>
-  <p class="contact"><a href="mailto:{{ site.social-email }}">{{ site.social-email }}</a></p>
-  <nav class="profile-links" aria-label="Profile links">
-    <a href="{{ site.social-scholar | escape }}">Google Scholar</a>
-    <span aria-hidden="true">·</span>
-    <a href="https://github.com/{{ site.social-github }}">GitHub</a>
-  </nav>
+  <div class="profile-intro">
+    <div class="bio">
+      <p>I am a PhD student at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> and Shanghai Innovation Institution. I received my bachelor's degree from <a href="https://www.tongji.edu.cn/">Tongji University</a>.</p>
+      <p>I am interested in continual learning, multimodal learning, and robot learning.</p>
+      <p class="contact"><a href="mailto:{{ site.social-email }}">{{ site.social-email }}</a></p>
+      <nav class="profile-links" aria-label="Profile links">
+        <a href="{{ site.social-scholar | escape }}">Google Scholar</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/{{ site.social-github }}">GitHub</a>
+      </nav>
+    </div>
+    <img class="portrait" src="{{ '/assets/img/JieChu.webp' | relative_url }}" width="640" height="640" alt="Jie Chu holding a camera" fetchpriority="high">
+  </div>
 </header>
 
-<section aria-labelledby="about">
-  <h2 id="about">About</h2>
-  <p>I am a PhD student at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> and Shanghai Innovation Institution, specializing in <strong>robot learning</strong>.</p>
-  <p>My work spans dexterous manipulation, real-time visual perception, and memory for foundation models. Feel free to <a href="mailto:{{ site.social-email }}">email me</a> to discuss research or collaboration.</p>
+<section class="photography" aria-labelledby="photography-title">
+  <div class="gallery-intro">
+    <h2 id="photography-title">Photography &amp; travel</h2>
+    <p lang="zh-CN">Hi! 我热爱摄影与旅行，欢迎<a href="mailto:{{ site.social-email }}">约拍、约旅行</a>！<br>这里是我在路上拍下的一些瞬间。</p>
+  </div>
+  <div class="photo-gallery">
+    {% for photo in site.data.photography %}
+    <a class="photo" href="{{ '/assets/photography/' | append: photo.image | append: '-full.webp' | relative_url }}" data-photo-index="{{ forloop.index0 }}" aria-label="View photograph: {{ photo.alt | escape }}">
+      <img src="{{ '/assets/photography/' | append: photo.image | append: '-960.webp' | relative_url }}"
+        srcset="{{ '/assets/photography/' | append: photo.image | append: '-480.webp' | relative_url }} 480w, {{ '/assets/photography/' | append: photo.image | append: '-960.webp' | relative_url }} 960w"
+        sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 900px) calc((100vw - 68px) / 2), 340px"
+        width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt | escape }}"
+        loading="lazy" decoding="async">
+    </a>
+    {% endfor %}
+  </div>
 </section>
 
-<section aria-labelledby="research">
-  <h2 id="research">Research Interests</h2>
-  <ul class="interests">
-    <li><strong>Robot learning:</strong> dexterous manipulation, reinforcement learning, language-guided robotics</li>
-    <li><strong>Perception:</strong> event-driven vision, real-time tracking, 6D pose estimation</li>
-    <li><strong>Memory:</strong> memory-augmented foundation models and agents</li>
-  </ul>
-</section>
-
-<section aria-labelledby="publications">
-  <h2 id="publications">Selected Publications</h2>
-  <ol class="publications">
-    <li>
-      <a class="paper-title" href="https://www.nature.com/articles/s41467-026-70240-6">Bridging the latency gap with a continuous stream evaluation framework in event-driven perception</a>
-      <p class="authors"><strong>Jie Chu*</strong>, Runze Zhang*, Chu Yang, Zongyou Yu, Zongtao Bu, Haotian Liu, Florian Röhrbein, Alois Knoll, Guang Chen, Changjun Jiang</p>
-      <p class="paper-details"><em>Nature Communications</em>, 2026.
-        <a class="resource-link" href="https://www.nature.com/articles/s41467-026-70240-6.pdf" aria-label="STARE paper PDF">PDF</a>
-        <a class="resource-link" href="https://github.com/ispc-lab/STARE" aria-label="STARE code">Code</a>
-      </p>
-    </li>
-    <li>
-      <a class="paper-title" href="https://arxiv.org/abs/2502.18423">RetrDex: Efficient Object Retrieval in Cluttered Scenes with a Dexterous Hand</a>
-      <p class="authors">Fengshuo Bai, Yu Li, <strong>Jie Chu</strong>, Tawei Chou, Runchuan Zhu, Ying Wen, Yaodong Yang, Yuanpei Chen</p>
-      <p class="paper-details"><em>IROS</em>, 2026.
-        <a class="resource-link" href="https://arxiv.org/pdf/2502.18423" aria-label="RetrDex paper PDF">PDF</a>
-        <a class="resource-link" href="https://retrdex.github.io/" aria-label="RetrDex project website">Project</a>
-      </p>
-    </li>
-  </ol>
-  <p class="publication-note">* Equal contribution. <a href="{{ site.social-scholar | escape }}">Full publication list on Google Scholar</a>.</p>
-</section>
-
-<section aria-labelledby="preprints">
-  <h2 id="preprints">Preprints</h2>
-  <ol class="publications">
-    <li>
-      <a class="paper-title" href="https://arxiv.org/abs/2610.26825">MemT-1.0: Towards Memory-Native Evolution</a>
-      <p class="authors">Zhiyu Li, Zeyu Zhang, Linyun Liu, Yiwei Bu, …, <strong>Jie Chu</strong>, …, Feiyu Xiong</p>
-      <p class="paper-details"><em>arXiv</em>, 2026.
-        <a class="resource-link" href="https://arxiv.org/pdf/2610.26825" aria-label="MemT-1.0 paper PDF">PDF</a>
-      </p>
-    </li>
-  </ol>
-</section>
-
-<section aria-labelledby="projects">
-  <h2 id="projects">Open-source Projects</h2>
-  <ul class="projects">
-    <li><a href="https://github.com/teal024/FoundationPose-plus-plus">FoundationPose++</a> — Real-time 6D pose tracking in highly dynamic scenes.</li>
-    <li><a href="https://github.com/BXZZcj/TinyRobotBench">TinyRobotBench</a> — An open-source replication exploring LLM-guided robot manipulation.</li>
-  </ul>
-</section>
+<dialog class="lightbox" aria-label="Photography viewer">
+  <button class="lightbox-close" type="button" aria-label="Close photo viewer" autofocus>×</button>
+  <button class="lightbox-prev" type="button" aria-label="Previous photograph">‹</button>
+  <figure class="lightbox-figure">
+    <img class="lightbox-image" alt="">
+    <figcaption><span class="lightbox-caption"></span><span class="lightbox-count"></span></figcaption>
+  </figure>
+  <button class="lightbox-next" type="button" aria-label="Next photograph">›</button>
+  <span class="lightbox-announcement" aria-live="polite"></span>
+</dialog>
 
 <footer class="page-footer">
-  <p>Last updated: November 2026</p>
+  <p>Photographs by Jie Chu · <a href="#">Back to top ↑</a></p>
 </footer>
