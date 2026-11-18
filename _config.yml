@@ -23,8 +23,8 @@ social-scholar: https://scholar.google.com/citations?user=-CPEwpEAAAAJ&hl=en
 # # Disqus
 discus-identifier: https-bxzzcj-github-io # add your discus identifier
 
-# Tracker
-analytics: # Google Analytics
+# Analytics uses the Google tag in _includes/analytics.html.
+# GA4 measurement ID: G-XGX4F6HE1Z
 
 # Build Settings
 markdown: kramdown
