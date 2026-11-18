@@ -210,3 +210,6 @@ footer { border-top: 1px dashed rgba(20,20,20,.14); padding: 28px 0 44px; font-s
   .tabs .grp { display: none; }
   nav ul { display: none; }
 }
+
+/* Keep the single scaling plot proportionate to the surrounding text. */
+figure.scaling-figure { max-width: 680px; margin-left: auto; margin-right: auto; }
