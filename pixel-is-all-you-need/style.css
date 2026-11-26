@@ -213,3 +213,8 @@ footer { border-top: 1px dashed rgba(20,20,20,.14); padding: 28px 0 44px; font-s
 
 /* Keep the single scaling plot proportionate to the surrounding text. */
 figure.scaling-figure { max-width: 680px; margin-left: auto; margin-right: auto; }
+
+/* Match the paper title’s doge mark without changing the artwork. */
+.title-ending { white-space: nowrap; }
+.title-doge { display: inline-block; width: .85em; height: .85em; object-fit: contain; vertical-align: -.05em; mix-blend-mode: multiply; }
+nav .brand .title-doge { width: 1.15em; height: 1.15em; vertical-align: -.2em; }
